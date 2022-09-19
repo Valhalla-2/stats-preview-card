@@ -1,0 +1,131 @@
+:root {
+  --vdark-blue: hsl(233, 47%, 7%);
+  --sdesaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+  --lexend-deca: 'Lexend Deca', sans-serif;
+  --inter: 'Inter', sans-serif;
+}
+
+/* box sizing */
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--vdark-blue);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9375rem;
+}
+
+.card {
+  max-width: 320px;
+  background-color: var(--sdesaturated-blue);
+  color: var(--white);
+  border-radius: 10px;
+  margin: 0 5%;
+}
+
+.card-image {
+  background-color: var(--soft-violet);
+  border-radius: 10px 10px 0 0;
+}
+
+.programming-workplace-mobile {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.card-text-content {
+  padding: 10%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.title {
+  font-family: var(--inter);
+  margin: 5% 10%;
+}
+
+.pink-text {
+  color: var(--soft-violet);
+}
+
+.description {
+  font-family: var(--lexend-deca);
+  margin: 2rem 0;
+  color: var(--main-paragraph);
+}
+
+.stats {
+  font-family: var(--inter);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.company-stats, .template-stats, .queries-stats {
+  display: flex;
+  flex-flow: column;
+  gap: 0.3rem;
+}
+
+.stats-numbers {
+  font-weight: 700;
+  font-family: var(--inter);
+  font-size: clamp(1.5rem, 1vw, 3rem);
+}
+
+.stats-heading {
+  color: var(--stat-headings);
+  font-family: var(--lexend-deca);
+}
+
+@media screen and (min-width:705px) {
+  .card {
+    display: flex;
+    flex-flow: row-reverse;
+    max-width: 1000px;
+  }
+
+  .card-image {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-image, .card-text-content {
+    flex: 0 1 auto;
+    width: 50%;
+  }
+
+  .stats {
+    flex-flow: row wrap;
+  }
+
+  .card-text-content {
+    padding: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
