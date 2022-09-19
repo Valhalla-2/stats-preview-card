@@ -95,7 +95,7 @@ html, body {
   font-family: var(--lexend-deca);
 }
 
-@media screen and (min-width:705px) {
+@media screen and (min-width:760px) {
   .card {
     display: flex;
     flex-flow: row-reverse;
