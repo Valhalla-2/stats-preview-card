@@ -7,6 +7,7 @@
   --stat-headings: hsla(0, 0%, 100%, 0.6);
   --lexend-deca: 'Lexend Deca', sans-serif;
   --inter: 'Inter', sans-serif;
+  --body-font: 0.9375rem;
 }
 
 /* box sizing */
@@ -24,15 +25,14 @@ html, body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  font-size: 0.9375rem;
+  font-size: var(--body-font);
 }
 
 .card {
-  max-width: 320px;
+  max-width: 80%;
   background-color: var(--sdesaturated-blue);
   color: var(--white);
   border-radius: 10px;
-  margin: 0 5%;
 }
 
 .card-image {
@@ -57,6 +57,7 @@ html, body {
 .title {
   font-family: var(--inter);
   margin: 5% 10%;
+  font-size: clamp(2rem, 1vw, 3.2rem);
 }
 
 .pink-text {
@@ -87,7 +88,7 @@ html, body {
 .stats-numbers {
   font-weight: 700;
   font-family: var(--inter);
-  font-size: clamp(1.5rem, 1vw, 3rem);
+  font-size:1.3rem;
 }
 
 .stats-heading {
@@ -95,7 +96,7 @@ html, body {
   font-family: var(--lexend-deca);
 }
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:580px) {
   .card {
     display: flex;
     flex-flow: row-reverse;
@@ -126,6 +127,5 @@ html, body {
 
   .title {
     margin: 0;
-    font-size: 2rem;
   }
 }
