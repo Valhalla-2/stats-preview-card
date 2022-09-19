@@ -75,7 +75,7 @@ html, body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 30px;
 }
 
 .company-stats, .template-stats, .queries-stats {
