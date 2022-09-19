@@ -116,7 +116,7 @@ html, body {
   }
 
   .card-text-content {
-    padding: 5%;
+    padding: 3.5rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
