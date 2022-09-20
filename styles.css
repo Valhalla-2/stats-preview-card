@@ -1,3 +1,4 @@
+/* For my custom variables */
 :root {
   --vdark-blue: hsl(233, 47%, 7%);
   --sdesaturated-blue: hsl(244, 38%, 16%);
@@ -17,6 +18,7 @@
   padding: 0;
 }
 
+/* For centering elements & full width of viewport */
 html, body {
   width: 100%;
   min-height: 100vh;
@@ -28,6 +30,7 @@ html, body {
   font-size: var(--body-font);
 }
 
+/* Main Card Section */
 .card {
   max-width: 80%;
   background-color: var(--sdesaturated-blue);
@@ -35,6 +38,7 @@ html, body {
   border-radius: 10px;
 }
 
+/* card image section */
 .card-image {
   background-color: var(--soft-violet);
   border-radius: 10px 10px 0 0;
@@ -48,6 +52,7 @@ html, body {
   mix-blend-mode: multiply;
 }
 
+/* card text section */
 .card-text-content {
   padding: 5%;
   text-align: center;
@@ -77,7 +82,7 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin:10% 0 5%;
+  margin: 10% 0 5%;
 }
 
 .company-stats, .template-stats, .queries-stats {
@@ -89,7 +94,7 @@ html, body {
 .stats-numbers {
   font-weight: 700;
   font-family: var(--inter);
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 .stats-heading {
@@ -97,6 +102,19 @@ html, body {
   font-family: var(--lexend-deca);
 }
 
+/* Footer Section */
+footer.attribution {
+  margin-top: 10%;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.attribution a {
+  color: white;
+}
+
+/* For responsiveness */
 @media screen and (min-width:580px) {
   .card {
     display: flex;
