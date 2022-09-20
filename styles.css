@@ -36,6 +36,11 @@ html, body {
   background-color: var(--sdesaturated-blue);
   color: var(--white);
   border-radius: 10px;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 /* card image section */
