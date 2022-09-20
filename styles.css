@@ -104,10 +104,11 @@ html, body {
 
 /* Footer Section */
 footer.attribution {
-  margin-top: 10%;
+  margin-top: 1rem;
   color: var(--white);
   letter-spacing: 0.1rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .attribution a {
